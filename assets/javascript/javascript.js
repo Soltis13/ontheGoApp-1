@@ -89,7 +89,7 @@ function displayInfo(){
   $(".mainsection").addClass("section")
     
 
-  var ipadd = "https://ipinfo.io/?token=$TOKEN";
+  var ipadd = "https://ipinfo.io/?token=$93f1ae14bb06f1";
  
   $.ajax({
       url: ipadd,
@@ -157,7 +157,7 @@ function renderResults(data) {
     
     //TODO - add limit search to 3? 4? 
 
-    var queryURL = "https://api.foursquare.com/v2/venues/search?ll="+lati+","+long+"&query="+SearchButton+"&radius=4000&limit=3&client_id=5MSXZF21SC1HYLZTM2TNULYNLXU3SZ3L5OY5PPKONAZQJNNW&client_secret=PWA55PPGLPWVB2F34AWNYT4YX4TNQS0JRN0Y2H0Q4WPCNQTZ&v=20180623";
+    var queryURL = "https://api.foursquare.com/v2/venues/search?ll="+lati+","+long+"&query="+SearchButton+"&radius=4000&limit=3&client_id=5MSXZF21SC1HYLZTM2TNULYNLXU3SZ3L5OY5PPKONAZQJNNW&client_secret=SKJPBK311ZFYXDJCX20LN1E5X5KLJC12IYHVUQRPP2Q3YA2V&v=20180623";
 
     //ajax call for search term venue
     $.ajax({
@@ -172,7 +172,7 @@ function renderResults(data) {
         //console.log(results)
     
         for (i = 0; i < results.length; i++){
-          var FourURL = "https://api.foursquare.com/v2/venues/"+results[i].id+"?&client_id=5MSXZF21SC1HYLZTM2TNULYNLXU3SZ3L5OY5PPKONAZQJNNW&client_secret=PWA55PPGLPWVB2F34AWNYT4YX4TNQS0JRN0Y2H0Q4WPCNQTZ&v=20180623";
+          var FourURL = "https://api.foursquare.com/v2/venues/"+results[i].id+"?&client_id=5MSXZF21SC1HYLZTM2TNULYNLXU3SZ3L5OY5PPKONAZQJNNW&client_secret=SKJPBK311ZFYXDJCX20LN1E5X5KLJC12IYHVUQRPP2Q3YA2V&v=20180623";
         
           $.ajax({
             url: FourURL,
