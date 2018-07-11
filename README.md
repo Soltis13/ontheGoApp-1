@@ -1,3 +1,5 @@
+. Created in collaboration Scott/Lisa/Chery/Abdi from Cohort#5 for Coding Bootcamp @ University of minnesota
+
 # ontheGoApp
 
 This App is created for people to find information quickly and easily 
